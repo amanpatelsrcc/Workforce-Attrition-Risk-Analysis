@@ -11,7 +11,7 @@ This project looks at employee level HR data to check whether the standard attri
 - **MySQL** – schema design, data cleaning, and building the core relational tables (employees, departments, job_roles, compensation, performance_scores)
 - **Power BI Desktop** – dashboard build, visuals, and all the bucketing/segmentation logic
 - **DAX** – calculated columns (tenure, income, and promotion gap buckets, department role combined labels, sort order helpers) plus measures for attrition rate, headcount, and averages
-- **File formats** – `.sql` for the database script, `.pbix` for the Power BI file
+
 
 **A note on how the work was split:** SQL only handles schema, cleaning, and the core tables here. Any bucketing (tenure, income, promotion gap) and the combined department-role labels are built as DAX columns inside Power BI instead. This was intentional — it keeps Power BI's data model doing the analytical work it's meant for, rather than exporting narrow pre-aggregated tables out of SQL first.
 
